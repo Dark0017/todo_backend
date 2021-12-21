@@ -6,10 +6,12 @@
  */
 
 module.exports = {
-
   attributes: {
-    title: {type:'string', required:true}
+    title: { type: "string", required: true },
+
+    todos:{
+      collection:"todos",
+      via:"boardId"
+    }
   },
-
 };
-

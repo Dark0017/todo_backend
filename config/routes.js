@@ -23,7 +23,13 @@ module.exports.routes = {
   "GET /board": { controller: "BoardsController", action: "get" },
   "GET /boards": { controller: "BoardsController", action: "getAll" },
   "PUT /board/edit": { controller: "BoardsController", action: "edit" },
-  "DELETE /board/delete/": { controller: "BoardsController", action: "delete" },
+  "DELETE /board/delete": { controller: "BoardsController", action: "delete" },
+  "POST /todo/create": { controller: "TodosController", action: "create" },
+  "GET /todo": { controller: "TodosController", action: "get" },
+  "GET /todos": { controller: "TodosController", action: "getAll" },
+  "PUT /todo/edit": { controller: "TodosController", action: "edit" },
+  "PUT /todo/complete": { controller: "TodosController", action: "complete" },
+  "DELETE /todo/delete": { controller: "TodosController", action: "delete" },
 
   /***************************************************************************
    *                                                                          *
