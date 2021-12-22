@@ -230,7 +230,7 @@ module.exports = {
      ***************************************************************************/
     onlyAllowOrigins: [
       "https://todo-backenda.herokuapp.com",
-      "https://unruffled-franklin-c40390.netlify.app/",
+      "https://unruffled-franklin-c40390.netlify.app",
     ],
     /***************************************************************************
      *                                                                          *
