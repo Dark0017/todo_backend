@@ -9,7 +9,7 @@ module.exports = {
   attributes: {
     title: { type: "string", required: true },
     isComplete: { type: "boolean", required: true },
-    description: { type: "string" },
+    description: { type: "string", allowNull: true },
     boardId: {
       model: "boards",
     },

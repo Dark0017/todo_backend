@@ -45,7 +45,7 @@ module.exports = {
     const id = req.query.id;
     const title = req.body.title;
     const description = req.body.description;
-    if (!id || !title || !description) return res.badRequest();
+    if (!id || !title || description === null) return res.badRequest();
 
     const todo = await Todos.findOne({ id: id }).intercept((err) => {
       res.status(400);
@@ -57,7 +57,7 @@ module.exports = {
         title: title,
         isComplete: todo.isComplete,
         description: description,
-        boardId: todo.id,
+        boardId: todo.boardId,
       })
       .intercept((err) => {
         res.status(400);

@@ -44,6 +44,11 @@ module.exports = {
   delete: async (req, res) => {
     const id = req.query.id;
     if (!id) return res.badRequest();
+    await Todos.destroy({ boardId: id }).intercept((err) => {
+      res.status(400);
+      return res.send(err.message);
+    });
+
     await Boards.destroyOne({ id: id }).intercept((err) => {
       res.status(400);
       return res.send(err.message);
