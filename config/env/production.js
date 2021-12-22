@@ -85,7 +85,7 @@ module.exports = {
      * https://sailsjs.com/docs/concepts/models-and-orm/model-settings#?migrate *
      *                                                                          *
      ***************************************************************************/
-    migrate: "safe",
+    migrate: "alter",
 
     /***************************************************************************
      *                                                                          *
@@ -96,7 +96,7 @@ module.exports = {
      * choose to keep this enabled.)                                            *
      *                                                                          *
      ***************************************************************************/
-    // cascadeOnDestroy: false,
+     cascadeOnDestroy: false,
   },
 
   /**************************************************************************
@@ -137,9 +137,9 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     cors: {
-      // allowOrigins: [
-      //   'https://example.com',
-      // ]
+      allRoutes: true,
+      allowOrigins: "*",
+      allowCredentials: false,
     },
   },
 
