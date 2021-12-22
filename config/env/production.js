@@ -137,7 +137,7 @@ module.exports = {
      ***************************************************************************/
     cors: {
       allRoutes: true,
-      allowOrigins: "*",
+      allowOrigins: ["https://unruffled-franklin-c40390.netlify.app/"],
       allowCredentials: false,
     },
   },
@@ -228,7 +228,10 @@ module.exports = {
      * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
      *                                                                          *
      ***************************************************************************/
-    onlyAllowOrigins: ["https://todo-backenda.herokuapp.com"],
+    onlyAllowOrigins: [
+      "https://todo-backenda.herokuapp.com",
+      "https://unruffled-franklin-c40390.netlify.app/",
+    ],
     /***************************************************************************
      *                                                                          *
      * If you are deploying a cluster of multiple servers and/or processes,     *
