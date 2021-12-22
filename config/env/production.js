@@ -44,7 +44,6 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     default: {
-      adapter: require("sails-postgresql"),
       url: process.env.DB_URL,
 
       // adapter: 'sails-mysql',
@@ -204,7 +203,7 @@ module.exports = {
      *                                                                          *
      ***************************************************************************/
     cookie: {
-      // secure: true,
+      secure: true,
       maxAge: 24 * 60 * 60 * 1000, // 24 hours
     },
   },
@@ -229,7 +228,7 @@ module.exports = {
      * > Be sure to use the right protocol!  ("http://" vs. "https://")         *
      *                                                                          *
      ***************************************************************************/
-    onlyAllowOrigins: ["https://example.com"],
+    onlyAllowOrigins: ["https://todo-backenda.herokuapp.com/"],
     /***************************************************************************
      *                                                                          *
      * If you are deploying a cluster of multiple servers and/or processes,     *
@@ -293,7 +292,7 @@ module.exports = {
      * (https://sailsjs.com/config/http)                                        *
      *                                                                          *
      ***************************************************************************/
-    // trustProxy: true,
+    trustProxy: true,
   },
 
   /**************************************************************************
