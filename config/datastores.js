@@ -48,6 +48,6 @@ module.exports.datastores = {
     // adapter: 'sails-mysql',
     // url: 'mysql://user:password@host:port/database',
     adapter: require("sails-postgresql"),
-    url: "postgres://jugzhyav:myX_0PTGkeFEizTNLKEwtRWJxwMycNCo@kesavan.db.elephantsql.com/jugzhyav",
+    url: process.env.DB_URL,
   },
 };
