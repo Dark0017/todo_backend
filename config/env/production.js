@@ -137,7 +137,7 @@ module.exports = {
      ***************************************************************************/
     cors: {
       allRoutes: true,
-      allowOrigins: ["https://unruffled-franklin-c40390.netlify.app/"],
+      allowOrigins: ["https://unruffled-franklin-c40390.netlify.app"],
       allowCredentials: false,
     },
   },
